@@ -16,5 +16,9 @@ public class HolaMundo {
         
         var despedirse="Hasta luego";
         System.out.println(despedirse);
+        
+        var num = 1;
+        System.out.println(num);
+
     }
 }
