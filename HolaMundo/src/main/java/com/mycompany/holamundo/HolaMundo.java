@@ -8,17 +8,16 @@ public class HolaMundo {
     
     public static void main(String arg[]){
         
-        String saludar="Saludos desde Java";
+        var usuario="Juan";
+        var saludar ="Hola";
+        System.out.println(saludar + " " +usuario);
         
-        System.out.println(saludar);
-        System.out.println(saludar);
-        System.out.println(saludar);
+        var i =3;
+        var j= 5;
+        System.out.println(i + j);
         
-        var despedirse="Hasta luego";
-        System.out.println(despedirse);
+        System.out.println(saludar + i + j);//Primero encuentra una cadena, por lo tanto lo restante lo concatena
         
-        var num = 1;
-        System.out.println(num);
-
+        System.out.println(i + j + saludar);// primero encuentra numeros, por lo tanto primero suma y despues concatena
     }
 }
