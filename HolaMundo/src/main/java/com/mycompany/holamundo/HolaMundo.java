@@ -7,7 +7,14 @@ package com.mycompany.holamundo;
 public class HolaMundo {
     
     public static void main(String arg[]){
-        System.out.println("Hola Mundo desde Java");
+        
+        String saludar="Saludos desde Java";
+        
+        System.out.println(saludar);
+        System.out.println(saludar);
+        System.out.println(saludar);
+        
+        var despedirse="Hasta luego";
+        System.out.println(despedirse);
     }
-    
 }
