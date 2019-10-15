@@ -13,7 +13,7 @@ public class TiposPrimitivosTipoChar {
 
         char varCharDecimal = 33;
         System.out.println("varCharDecimal = " + varCharDecimal);
-        
+
         char varCharSimbolo = '!';
         System.out.println("varCharSimbolo = " + varCharSimbolo);
 
