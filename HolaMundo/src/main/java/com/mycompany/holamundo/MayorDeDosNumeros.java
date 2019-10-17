@@ -20,5 +20,4 @@ public class MayorDeDosNumeros {
         System.out.println(numero1 > numero2 ? numero1 : numero2);
 
     }
-
 }
