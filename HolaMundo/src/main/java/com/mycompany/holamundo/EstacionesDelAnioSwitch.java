@@ -1,0 +1,45 @@
+package com.mycompany.holamundo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author katyc
+ */
+public class EstacionesDelAnioSwitch {
+
+    public static void main(String args[]) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proporcione el mes del año: ");
+        var mes = scanner.nextInt(); // mes del año
+
+        String estacion = null;
+
+        switch (mes) {
+            case 1:
+            case 2:
+            case 12:
+                estacion = "Invierno";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                estacion = "Primavera";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                estacion = "Verano";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                estacion = "Otoño";
+                break;
+            default:
+                estacion = "Mes Incorrecto";
+        }
+        System.out.println(" Estacion: " + estacion + " para el mes: " + mes);
+    }
+}
