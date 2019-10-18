@@ -11,7 +11,7 @@ public class Persona {
     String apellido;
 
     //Metodos
-    public void desplegarNombre() {
+    public void desplegarNombres() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
     }
