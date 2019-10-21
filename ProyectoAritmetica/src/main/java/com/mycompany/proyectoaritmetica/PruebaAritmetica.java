@@ -8,18 +8,28 @@ public class PruebaAritmetica {
 
     public static void main(String[] args) {
 
-        //Crear un objeto de tipo aritmetica
-        Aritmetica aritmetica = new Aritmetica();
-        //De esta forma se puede modificar los valores de los atributos de la clase
-        //No es buena practica 
-        aritmetica.a = 10;
-        aritmetica.b = 3;
+        //variables locales
+        int operandoA = 6;
+        int operandoB = 2;
 
-        int resultado = aritmetica.sumar();
-        System.out.println("resultado = " + resultado);
+        //Creamos un objeto de la clase Aritmetica enviando argumentos
+        Aritmetica objeto1 = new Aritmetica(operandoA, operandoB);
+
+        //Imprimiendo los valores de los operandos 
+        System.out.println("OperandoA = " + operandoA);
+        System.out.println("OperandoB = " + operandoB);
+
+        //Imprimiento el resultado de la suma
+        System.out.println("\nEl resultado de la suma es: " + objeto1.sumar());
+
+        //Imprimiento el resultado de la resta
+        System.out.println("\nEl resultado de la resta es: " + objeto1.restar());
         
-        //Crar un segundo objeto Aritmetica
-        Aritmetica aritmetica1 = new Aritmetica(4,2);
-        System.out.println("resultado2 = "+ aritmetica1.sumar());
+        
+        //Imprimiento el resultado de la multiplicacion
+        System.out.println("\nEl resultado de la multiplicacion es: " + objeto1.multiplicar());
+        
+        //Imprimiento el resultado de la division
+        System.out.println("\nEl resultado de la division es: " + objeto1.dividir());
     }
 }

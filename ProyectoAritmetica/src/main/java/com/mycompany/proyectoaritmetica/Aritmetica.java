@@ -11,20 +11,31 @@ public class Aritmetica {
     int b;
 
     public Aritmetica() {
-        //De esta forma se puede modificar los valores de los atributos de la clase
-        //a=5;
-        //b=3;
         System.out.println("Ejecutando Contructor vacio");
     }
 
-    public Aritmetica(int arg1, int arg2) {
-        a = arg1;
-        b = arg2;
+    public Aritmetica(int a, int b) {
+        this.a = a;
+        this.b = b;
         System.out.println("Ejecutando contructor con 2 argumentos");
     }
 
     public int sumar() {
-        int resultado = a + b;//Se usan los atributos de la clase
-        return resultado;
+        return this.a + this.b;
     }
+
+    public int restar() {
+        return this.a - this.b;
+    }
+
+    public int multiplicar() {
+
+        return this.a * this.b;
+    }
+
+    public int dividir() {
+
+        return this.a / this.b;
+    }
+
 }
